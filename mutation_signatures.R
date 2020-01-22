@@ -1,8 +1,6 @@
-setwd('/mnt/d/Documents/mac/Documents/c_mounts/g7_wl/COMMON/analysis/tcga_skcm/');
-
 set.seed(777);
 
-lib <- lapply(c('magrittr', 'caret', 'NNLM', 'pheatmap', 'ggplot2', 'reshape2', 'extrafont'), library, character.only = T);
+lib <- lapply(c('magrittr', 'caret', 'NNLM', 'pheatmap', 'ggplot2', 'reshape2', 'extrafont', 'cowplot'), library, character.only = T);
 
 perform.cv <- FALSE;
 if (!perform.cv) k <- 3;
@@ -100,6 +98,7 @@ p <- ggplot(mapping = aes(x = Var1, y = to.plot$value), data = to.plot) + geom_b
         axis.title.x = element_blank()
         );
 
+### plot percent contribution of each tn mutation to signature
 print(p);
 
 ### Compare with cosmic signatures
@@ -130,7 +129,7 @@ plt.list <- lapply(
                 name = NULL, guide = F
             ) +
             theme(
-                axis.text.x = element_text(angle = 90, family = 'mono', vjust = 0.5),
+                axis.text.x = element_text(angle = 90, family = 'mono', vjust = 0.5, hjust = 1),
                 axis.title.x = element_blank()
             );
 
@@ -138,5 +137,6 @@ plt.list <- lapply(
     }
 );
 
+### plot correlation with cosmic signatures
 p <- plot_grid(plotlist = plt.list, nrow = 3);
 print(p);

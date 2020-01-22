@@ -1,9 +1,7 @@
-setwd('/mnt/d/Documents/mac/Documents/c_mounts/g7_wl/COMMON/analysis/tcga_skcm/');
-
 library(ggplot2);
 
 # clinical data (supplementary table 1)
-clin <- read.delim('./supp_tables/dat_clin.tsv', stringsAsFactors = F);
+clin <- read.delim('./data/dat_clin.tsv', stringsAsFactors = F);
 rownames(clin) <- clin$MAF_sample_id;
 
 # Binary matrix of missense and silent mutations
