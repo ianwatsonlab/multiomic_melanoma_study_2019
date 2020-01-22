@@ -5,4 +5,4 @@ Supplemental code for the paper entitled "Multi-omic analysis reveals new driver
 Reproduces the results presented in Fig. 2b
 
 ## mutation_signatures.R
-Derives mutational signatures found in our study and reproduces results presented in Supplementary Figs. 1b and 2a.
+Derives mutational signatures found in our study and reproduces results presented in Supplementary Figs. 2c and 3a.
