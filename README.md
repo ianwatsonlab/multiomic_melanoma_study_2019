@@ -7,6 +7,8 @@ Reproduces the results presented in Fig. 2b
 ### mutation_signatures.R
 Derives mutational signatures found in our study and reproduces results presented in Supplementary Figs. 2c and 3a.
 
-### data/melanoma_combined_variants_public_only_V1.tsv.gz
-This file contains variants from the 5 melanoma studies in hg38 coordinates. 
-Protected variants from TCGA-SKCM are not included in this file, but they can be accessed through the GDC portal: https://portal.gdc.cancer.gov/
+### Somatic variants
+An .RDS file containing somatic variants from the 5 melanoma studies can be accessed here: https://drive.google.com/file/d/1Ican79mU_eCva2Q86E3fh257ACAZutXN/view?usp=sharing
+
+Variants are in hg38 coordinates and have been annotated with snpEff. Please refer to the method section of the publication for additional information about processing.
+Note that protected variants from TCGA-SKCM are not included in this file, but they can be accessed through the GDC portal: https://portal.gdc.cancer.gov/
