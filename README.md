@@ -10,3 +10,8 @@ Derives mutational signatures found in our study and reproduces results presente
 ### smg_alterations_vs_mRNA_groups.R
 Reproduces results presented in Fig. 7a
 
+### Somatic variants
+Combined somatic variants from the 5 melanoma studies can be accessed here: https://drive.google.com/file/d/1hRwvvMEiS387TZGuHraJlfOI1Ar4pay2/view?usp=sharing
+
+Variants are in hg38 coordinates and have been re-annotated with snpEff. Please refer to the method section of the publication for additional information about processing.
+Note that protected variants from TCGA-SKCM are not included in this file, but they can be accessed through the GDC portal: https://portal.gdc.cancer.gov/
